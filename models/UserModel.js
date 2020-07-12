@@ -52,7 +52,7 @@ module.exports = (sequelize, DataTypes) => {
     })
     UserModel.hasMany(models.UserCompanyModel, {
       as: 'users_companys',
-      foreignKey: 'id'
+      foreignKey: 'userId'
     });
   };
 

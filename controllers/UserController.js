@@ -38,7 +38,13 @@ class UserController {
   }
 
   static async getAll(req, res) {
-    const users = await UserModel.findAll({ where: { role: 0 } });
+    const users = await UserModel.findAll({
+      where: { role: 0 },
+      include: {
+        model: UserCompanyModel,
+        as: 'users_companys'
+      }
+    });
     
     if (!users) req.status(422).send();
 
