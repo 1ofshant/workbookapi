@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "shant",
+    "password": "loseyourself",
+    "database": "workbook",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "jwt_key": "tratata",
+    "api_port": 4000
+  },
+  "production": {
+    "username": "shant",
+    "password": "loseyourself",
+    "database": "todopsql",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "jwt_key": "rabbit",
+    "api_port": 5000
+
+  }
+}

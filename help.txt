@@ -1,0 +1,5 @@
+sequelize init
+
+sequlize db:migrate:undo:all 
+
+sequlize db:migrate 
