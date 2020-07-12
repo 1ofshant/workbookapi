@@ -104,6 +104,21 @@ class UserController {
 
     res.send(users);
   }
+
+  static async auth(req, res) {
+    const { userId } = req;
+
+    const user = await UserModel.findOne({
+      where: { id: userId },
+    })
+
+    if (!user) {
+      res.status(401).send();
+      return;
+    }
+
+    res.send(user);
+  }
 };
 
 module.exports = UserController;

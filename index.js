@@ -29,6 +29,7 @@ app.get('/user', UserController.getOne);
 app.delete('/logout', TokenController.logout);
 app.delete('/logoutAll', TokenController.logoutAll);
 app.get('/user/company', UserCompanyController.getAll);
+app.get('/auth', UserController.auth);
 
 app.use(checkRole);
 
