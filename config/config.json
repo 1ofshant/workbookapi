@@ -11,7 +11,7 @@
   "production": {
     "username": "shant",
     "password": "loseyourself",
-    "database": "todopsql",
+    "database": "workbook",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "jwt_key": "rabbit",
