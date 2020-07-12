@@ -15,7 +15,7 @@
     "host": "127.0.0.1",
     "dialect": "mysql",
     "jwt_key": "rabbit",
-    "api_port": 5000
+    "api_port": 6000
 
   }
 }
