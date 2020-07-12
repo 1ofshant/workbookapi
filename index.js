@@ -44,5 +44,5 @@ app.delete('/company/delete', UserCompanyController.delete);
 const { api_port } = getConfig();
 
 app.listen(api_port, () => {
-  console.log(`tss running on port ${api_port}`);
+  console.log(`workbookapi running on port ${api_port}`);
 });
